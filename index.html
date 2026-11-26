@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EDGAR CRM Console V10</title>
+  <link rel="stylesheet" href="./v10-responsive.css" />
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #070b14; color: #e2e8f0; }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 24px 16px 90px; }
+    header { border-bottom: 1px solid #1e293b; padding-bottom: 18px; margin-bottom: 24px; }
+    .eyebrow { color: #38bdf8; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; }
+    h1 { margin: 6px 0 8px; font-size: 28px; color: #f8fafc; }
+    .sub { color: #94a3b8; font-size: 15px; line-height: 1.5; max-width: 740px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+    .card { background: #0f172a; border: 1px solid #1e293b; border-radius: 12px; padding: 16px; display: flex; flex-direction: column; gap: 8px; }
+    .badge { display: inline-block; width: fit-content; font-size: 11px; font-weight: 700; color: #38bdf8; background: rgba(56,189,248,0.12); padding: 3px 9px; border-radius: 999px; }
+    .card h3 { margin: 0; font-size: 16px; color: #f8fafc; }
+    .card p { margin: 0; font-size: 13px; color: #94a3b8; line-height: 1.45; }
+    .open-btn { margin-top: auto; min-height: 44px; border-radius: 8px; border: 1px solid #38bdf8; background: rgba(56,189,248,0.15); color: #f8fafc; font-weight: 600; cursor: pointer; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">SEC Filings, Rule 144 & Securities Intelligence &bull; V10 Release</div>
+      <h1>EDGAR CRM Console V10</h1>
+      <p class="sub">Enterprise relationship management console marrying SEC EDGAR institutional filings with pipeline tracking, advisor notes, and deal-stage progression.</p>
+    </header>
+    <div class="grid">
+        <div class="card">
+          <div class="badge">V10 Module #1</div>
+          <h3>Live SEC EDGAR Filing Sync to Contact & Account Timelines</h3>
+          <p><strong>Capability:</strong> Automatically attaches every new 8-K, 10-Q, 10-K, or Form 4 to the associated corporate account in the CRM without manual data entry.</p>
+          <p><strong>Rationale:</strong> Ensures dealmakers have an instantaneous, comprehensive record of all official regulatory events when engaging in executive conversations.</p>
+          <button type="button" class="open-btn" onclick="document.getElementById('v10-fab-btn') && document.getElementById('v10-fab-btn').click()">Launch Interactive Module</button>
+        </div>
+        
+        <div class="card">
+          <div class="badge">V10 Module #2</div>
+          <h3>Custom Deal Stage & Pipeline Revenue Forecasting</h3>
+          <p><strong>Capability:</strong> Introduces configurable Kanban pipeline stages (Sourced, Initial Audit, NDA Signed, Term Sheet Out, In Drafting, Closed) with weighted success probability forecasting.</p>
+          <p><strong>Rationale:</strong> Transforms raw regulatory scouting into an institutional revenue pipeline with clear visibility into quarterly advisory fees.</p>
+          <button type="button" class="open-btn" onclick="document.getElementById('v10-fab-btn') && document.getElementById('v10-fab-btn').click()">Launch Interactive Module</button>
+        </div>
+        
+        <div class="card">
+          <div class="badge">V10 Module #3</div>
+          <h3>Collaborative Internal Deal Notes & Secure Document Storage</h3>
+          <p><strong>Capability:</strong> Enables multi-user threaded commenting, @mentions, and encrypted PDF attachment uploads for term sheets, fee agreements, and clean cap tables.</p>
+          <p><strong>Rationale:</strong> Centralizes advisory deal intelligence, eliminating fragmented communications across disparate email chains and local hard drives.</p>
+          <button type="button" class="open-btn" onclick="document.getElementById('v10-fab-btn') && document.getElementById('v10-fab-btn').click()">Launch Interactive Module</button>
+        </div>
+        
+        <div class="card">
+          <div class="badge">V10 Module #4</div>
+          <h3>Automated Conflict of Interest & Cross-Portfolio Checker</h3>
+          <p><strong>Capability:</strong> Cross-references prospective advisory targets against existing client rosters, creditor lists, and board affiliations to flag conflicts before engagement letters are executed.</p>
+          <p><strong>Rationale:</strong> Mitigates legal liability and compliance violations under FINRA and state legal ethics rules regarding dual representation.</p>
+          <button type="button" class="open-btn" onclick="document.getElementById('v10-fab-btn') && document.getElementById('v10-fab-btn').click()">Launch Interactive Module</button>
+        </div>
+        
+        <div class="card">
+          <div class="badge">V10 Module #5</div>
+          <h3>Bulk CSV/Excel Export & Custom Advisory Metric Reporting</h3>
+          <p><strong>Capability:</strong> Provides granular reporting dashboards tracking outreach-to-deal conversion rates, average transaction velocity, and advisory fee yields by sector.</p>
+          <p><strong>Rationale:</strong> Supplies managing partners with operational analytics needed to allocate advisory personnel and marketing spend efficiently.</p>
+          <button type="button" class="open-btn" onclick="document.getElementById('v10-fab-btn') && document.getElementById('v10-fab-btn').click()">Launch Interactive Module</button>
+        </div>
+        </div>
+  </div>
+  <script src="./v10-suite.js" defer></script>
+</body>
+</html>
